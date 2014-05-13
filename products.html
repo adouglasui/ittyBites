@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+		<title>Itty Bites</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<link href='http://fonts.googleapis.com/css?family=Droid+Sans|Dancing+Script|Homemade+Apple' rel='stylesheet' type='text/css'>
+		<link rel="icon" type="image/ico" href="images/favicon.ico"/>
+		<!-- <link rel="stylesheet" href="slider/blueberry.css" /> -->
+	
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="gallery/css/default.css" />
+		<link rel="stylesheet" type="text/css" href="gallery/css/component.css" />
+		<script src="gallery/js/modernizr.custom.js" type="text/javascript"></script>
+		
+		<!--- Accordian -->
+		<link rel="stylesheet" type="text/css" href="gallery/css/jquery-ui.css" />
+		<script src="gallery/js/jquery-git.js" type="text/javascript"></script>
+
+		<script type='text/javascript'>
+		$(window).load(function(){
+		$(function() {
+			$("#accordion > h3").on("click", function(e) {
+				$(this).next().slideToggle(function(e) {
+					if ($(this).is(":visible")) {
+						$(this).addClass("ui-accordion-content-active")
+						.prev().toggleClass("ui-corner-all ui-corner-top").addClass("ui-accordion-header-active ui-state-active")
+						.children(".ui-accordion-header-icon").toggleClass("ui-icon-triangle-1-e ui-icon-triangle-1-s");
+					}
+					else {
+						$(this).removeClass("ui-accordion-content-active")
+						.prev().toggleClass("ui-corner-all ui-corner-top").removeClass("ui-accordion-header-active ui-state-active")
+						.children(".ui-accordion-header-icon").toggleClass("ui-icon-triangle-1-e ui-icon-triangle-1-s");
+					}
+				});
+			})
+			.hover(function(e) { $(this).toggleClass("ui-state-hover"); });
+		})
+		});
+		</script>	
+	</head>
+
+	<body>
+	  <div id="wrapper">
+		<header>
+			<div id="topBanner">
+				<!-- This is for the top teal banner, above the logo-->
+			</div>
+			
+			<div id="logo">
+				<!--logo--><img src="images/logo.png" alt="Itty Bites Logo" /><!--/logo-->
+			</div>
+			<nav>
+			<div class="ribbon">
+			<div class="ribbon-stitches-top"></div>
+			<div class="ribbon-content">
+				  <ul>
+					<li><a href="index.html">Home</a></li>
+					<li class="currentPage"><a href="products.html">Products</a>
+						<ul id="products">
+							<li><a href="products.html">Cake Pops</a></li>
+							<li><a href="products.html#og-grid2">Cupcakes</a></li>
+							<li><a href="products.html#og-grid3">Chocolate Covered Treats</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Order</a>
+							<ul id="order">
+							<li><a href="order-cakepop.html">Cake Pops</a></li>
+							<li><a href="order-cupcake.html">Cupcakes</a></li>
+                            <li><a href="contact.htm">Chocolate Covered Treats</a></li>
+						</ul> 
+					</li>
+					<li><a href="classes.html">Classes</a></li>
+					<li><a href="testimonials.html">Testimonials</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.htm">Contact</a></li>
+				</ul>
+				 </div>
+			<div class="ribbon-stitches-bottom"></div>
+			</div>
+		 </nav>
+		</header>
+		 
+		<div class="container">
+				<header class="clearfix">
+					<h1>Delicious Treats!<span>Here is a collection of our delicious treats. We have a variety of tasty sweets. From cakepops, to cupcakes and even chocolate covered treats, we have everything to satisfy your sweet tooth!</span>
+					<span>For any inquiries on pricing please see our <a href="order-cakepop.html" class="orderspan">Order</a> page.</span>
+					</h1>	
+				</header>
+				<div class="main">
+					<div id="accordion">
+						<h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons ui-corner-top ui-accordion-header-active ui-state-active">&nbsp;&nbsp;&nbsp;Cakepops</h3>
+							<div>
+								<ul id="og-grid" class="og-grid">
+									<li>
+										<a href="" data-largesrc="images/gallery/cakepops/cakepop52.jpg" data-title="Elegance" data-description="Red velvet cakepops with a custom, hand crafted flower, attached to a bling pop!">
+											<img src="images/gallery/cakepops/thumbs/thumb_pop52.jpg" alt="Bling Flower Cake Pop"/>
+										</a>
+									</li>
+									<li>
+										<a href="" data-largesrc="images/gallery/cakepops/cakepop51.jpg" data-title="Hunger Games" data-description="Hunger games themed cakepop!">
+											<img src="images/gallery/cakepops/thumbs/thumb_pop51.jpg" alt="Hunger Games Cake Pops"/>
+										</a>
+									</li>
+									<li>
+										<a href="" data-largesrc="images/gallery/cakepops/cakepop50.jpg" data-title="Purple &amp; Pink Cake Pops" data-description="Purple and pink cake pops with swirls of white sprinkles - perfect for a baby shower!">
+											<img src="images/gallery/cakepops/thumbs/thumb_pop50.jpg" alt="Purple &amp; Pink Cake Pops"/>
+										</a>
+									</li>
+									<li>
+										<a href="" data-largesrc="images/gallery/cakepops/cakepop49.jpg" data-title="Green Bay Packers" data-description="Cake pops for every occasion - go Packers!">
+											<img src="images/gallery/cakepops/thumbs/thumb_pop49.jpg" alt="Green Bay Packers Cake Pop"/>
+										</a>
+									</li>
+									<li>
+										<a href="" data-largesrc="images/gallery/cakepops/cakepop48.jpg" data-title="Pink &amp; Teal" data-description="Pink and teal cake pops - perfect for a bridal shower or luncheon">
+											<img src="images/gallery/cakepops/thumbs/thumb_pop48.jpg" alt="Pink &amp; Teal Cake Pops"/>
+										</a>
+									</li>
+									<li>
+										<a href="" data-largesrc="images/gallery/cakepops/cakepop47.jpg" data-title="Soccer Cake Pops" data-description="Soccer cake pops for your child's birthday party!">
+											<img src="images/gallery/cakepops/thumbs/thumb_pop47.jpg" alt="Soccer Cake Pops"/>
+										</a>
+									</li>
+									<li>
+										<a href="" data-largesrc="images/gallery/cakepops/cakepop42.jpg" data-title="Purple &amp; White" data-description="Delicious red velvet cake pops dipped in a purple candy coating with white swirls!">
+											<img src="images/gallery/cakepops/thumbs/thumb_pop42.jpg" alt="Purple &amp; White Sprinkles Cake Pops"/>
+										</a>
+									</li>
+									<li>
+										<a href="" data-largesrc="images/gallery/cakepops/cakepop43.jpg" data-title="Pink &amp; White" data-description="Beautiful and delicious - these pink and white cake pops are perfect for any occasion.">
+											<img src="images/gallery/cakepops/thumbs/thumb_pop43.jpg" alt="White &amp; White Sprinkles Cake Pops"/>
+										</a>
+									</li>
+									<li>
+										<a href="" data-largesrc="images/gallery/cakepops/cakepop40.jpg" data-title="Minion Cake Pops" data-description="Can't get much cuter than this! Minon cake pops &heart;">
+											<img src="images/gallery/cakepops/thumbs/thumb_pop40.jpg" alt="Minion Cake Pops"/>
+										</a>
+									</li>
+									<li>
+										<a href="" data-largesrc="images/gallery/cakepops/cakepop1.jpg" data-title="Peanutbutter Love" data-description="Chocolate cake with peanut butter, hand-rolled, then dipped in milk chocolate and covered with delicious crumbled peanut butter cups!">
+											<img src="images/gallery/cakepops/thumbs/thumb_pop1.png" alt="img01"/>
+										</a>
+									</li>
+									<li>
+										<a href="" data-largesrc="images/gallery/cakepops/cakepop2.jpg" data-title="Pretty in Purple" data-description="Delicious red velvet cake pops.">
+											<img src="images/gallery/cakepops/thumbs/thumb_pop2.png" alt="img01"/>
+										</a>
+									</li>
+									<li>
+										<a href="" data-largesrc="images/gallery/cakepops/cakepop3.jpg" data-title="Blue Dreams" data-description="White cake with sprinkles as well as pink swirls.">
+											<img src="images/gallery/cakepops/thumbs/thumb_pop3.png" alt="img01"/>
+										</a>
+									</li>
+									<li>
+										<a href="" data-largesrc="images/gallery/cakepops/cakepop4.jpg" data-title="Sweet Scare" data-description="Adorable little halloween decorated cakepops.">
+											<img src="images/gallery/cakepops/thumbs/thumb_pop4.png" alt="img01"/>
+										</a>
+									</li>
+									<li>
+										<a href="" data-largesrc="images/gallery/cakepops/cakepop7.jpg" data-title="Frosty the Snowman" data-description="Festive coloured cake pops in chocolate and vanilla. Topped with crushed candy cane sprinkles.">
+											<img src="images/gallery/cakepops/thumbs/thumb_pop7.png" alt="img01"/>
+										</a>
+									</li>
+									<li>
+										<a href="" data-largesrc="images/gallery/cakepops/cakepop8.jpg" data-title="Granny Smiths" data-description="Fresh from the orchard these granny smiths will bring that smile to your face.">
+											<img src="images/gallery/cakepops/thumbs/thumb_pop8.png" alt="img01"/>
+										</a>
+									</li>
+									<li>
+										<a href="" data-largesrc="images/gallery/cakepops/cakepop9.jpg" data-title="Delicate Pink" data-description="Beautiful white cakepop with an adorable little pink flower accent.">
+											<img src="images/gallery/cakepops/thumbs/thumb_pop9.png" alt="img01"/>
+										</a>
+									</li>
+									<li>
+										<a href="" data-largesrc="images/gallery/cakepops/cakepop10.jpg" data-title="Peek-a-Boo!" data-description="Autumn is just around the corner and this guy is ready to welcome it in!">
+											<img src="images/gallery/cakepops/thumbs/thumb_pop10.png" alt="img01"/>
+										</a>
+									</li>
+									<li>
+										<a href="" data-largesrc="images/gallery/cakepops/cakepop11.jpg" data-title="Sweethearts Dream" data-description="Show someone how much you appreciate them with these adorable love-pops!">
+											<img src="images/gallery/cakepops/thumbs/thumb_pop11.png" alt="img01"/>
+										</a>
+									</li>
+									<li>
+										<a href="" data-largesrc="images/gallery/cakepops/cakepop12.jpg" data-title="All Dressed Up!" data-description="Frosty is all wrapped up and ready to go! Bring in the holidays!">
+											<img src="images/gallery/cakepops/thumbs/thumb_pop12.png" alt="img01"/>
+										</a>
+									</li>
+									<li>
+										<a href="" data-largesrc="images/gallery/cakepops/cakepop13.jpg" data-title="BBQ Fantasy" data-description="welcome BBQ season! These cheeseburger cake-pops will bring a smile to any ones face!">
+											<img src="images/gallery/cakepops/thumbs/thumb_pop13.png" alt="img01"/>
+										</a>
+									</li>
+									<li>
+										<a href="" data-largesrc="images/gallery/cakepops/cakepop14.jpg" data-title="Why, Hello Kitty!" data-description="Cake pops that are too cute to even eat!">
+											<img src="images/gallery/cakepops/thumbs/thumb_pop14.png" alt="img01"/>
+										</a>
+									</li>
+									<li>
+										<a href="" data-largesrc="images/gallery/cakepops/cakepop34.jpg" data-title="Big Bird!" data-description="Let us show you how to get to Sesame Street. Is that big bird I see?">
+											<img src="images/gallery/cakepops/thumbs/thumb_pop34.png" alt="img01"/>
+										</a>
+									</li>
+									<li>
+										<a href="" data-largesrc="images/gallery/cakepops/cakepop19.jpg" data-title="Perfect Purple" data-description="Blue and purple on the outside, very red velvet on the inside!">
+											<img src="images/gallery/cakepops/thumbs/thumb_pop19.png" alt="img01"/>
+										</a>
+									</li>
+									<li>
+										<a href="" data-largesrc="images/gallery/cakepops/cakepop27.jpg" data-title="In love!" data-description="Fall in love with these delicious red velvet cake pops, covered with chocolate drizzle and coconut!">
+											<img src="images/gallery/cakepops/thumbs/thumb_pop27.png" alt="img01"/>
+										</a>
+									</li>
+								</ul>	
+							</div>
+						<h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons ui-corner-top ui-accordion-header-active ui-state-active">&nbsp;&nbsp;&nbsp;Cupcakes</h3>
+							<div>
+								<ul id="og-grid2" class="og-grid">
+									<li>
+										<a href="" data-largesrc="images/gallery/cupcakes/cupcake1.jpg" data-title="Smooth and Creamy" data-description="Calling all peanut butter lovers. Take home some of these delicious peanut butter cupcakes!">
+											<img src="images/gallery/cupcakes/thumb/thumb_cake1.png" alt="img01"/>
+										</a>
+									</li>
+									<li>
+										<a href="" data-largesrc="images/gallery/cupcakes/cupcake2.jpg" data-title="Peanutbutter Cream" data-description="Vanilla cupcakes with a sweet natural peanut butter buttercream!">
+											<img src="images/gallery/cupcakes/thumb/thumb_cake2.png" alt="img01"/>
+										</a>
+									</li>
+									<li>
+										<a href="" data-largesrc="images/gallery/cupcakes/cupcake3.jpg" data-title="Red Velvet" data-description="Red velvet cupcakes with cream cheese frosting! Say mmm!">
+											<img src="images/gallery/cupcakes/thumb/thumb_cake3.png" alt="img01"/>
+										</a>
+									</li>
+									<li>
+										<a href="" data-largesrc="images/gallery/cupcakes/cupcake5.jpg" data-title="Dark and Daring" data-description="Who doesn't love a black rose!">
+											<img src="images/gallery/cupcakes/thumb/thumb_cake5.png" alt="img01"/>
+										</a>
+									</li>
+									<li>
+										<a href="" data-largesrc="images/gallery/cupcakes/cupcake6.jpg" data-title="A Dozen Roses" data-description="Frosting can be made in any colour! Contact for more details. Get some pretty rose cupcakes!">
+											<img src="images/gallery/cupcakes/thumb/thumb_cake6.png" alt="img01"/>
+										</a>
+									</li>
+									<li>
+										<a href="" data-largesrc="images/gallery/cupcakes/cupcake8.jpg" data-title="Walking in a..." data-description="Winter Wonderland and pink cupcakes for the kids!">
+											<img src="images/gallery/cupcakes/thumb/thumb_cake8.png" alt="img01"/>
+										</a>
+									</li>
+									<li>
+										<a href="" data-largesrc="images/gallery/cupcakes/cupcake9.jpg" data-title="Yummy Banana" data-description="Banana muffins with chocolate chips and chopped walnuts, topped with a delicious vanilla-cinnamon frosting and a little extra sprinkle of cinnamon on top!">
+											<img src="images/gallery/cupcakes/thumb/thumb_cake9.png" alt="img01"/>
+										</a>
+									</li>
+									<li>
+										<a href="" data-largesrc="images/gallery/cupcakes/cupcake15.jpg" data-title="Show Your Stripes!" data-description="Vanilla cupcakes with vanilla buttercream!">
+											<img src="images/gallery/cupcakes/thumb/thumb_cake15.png" alt="img01"/>
+										</a>
+									</li>
+									<li>
+										<a href="" data-largesrc="images/gallery/cupcakes/cupcake17.jpg" data-title="Fruity Frenzy" data-description="Vanilla cupcakes with strawberry buttercream topped with fresh strawberries and blueberries!">
+											<img src="images/gallery/cupcakes/thumb/thumb_cake17.png" alt="img01"/>
+										</a>
+									</li>
+								</ul>	
+							</div>
+
+							<h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons ui-corner-top ui-accordion-header-active ui-state-active">&nbsp;&nbsp;&nbsp;Chocolate Covered Treats</h3>
+							<div>
+								<ul id="og-grid3" class="og-grid">
+									<li>
+										<a href="" data-largesrc="images/gallery/strawberries/strawberry1.jpg" data-title="Strawberries!" data-description="Who doesn't like coconut on a chocolate covered strawberry!">
+											<img src="images/gallery/strawberries/thumbs/thumb_straw1.png" alt="img01"/>
+										</a>
+									</li>
+									<li>
+										<a href="" data-largesrc="images/gallery/strawberries/strawberry2.jpg" data-title="Pretty Berries" data-description="Irresistible and tasteful chocolate covered strawberries!">
+											<img src="images/gallery/strawberries/thumbs/thumb_straw2.png" alt="img01"/>
+										</a>
+									</li>
+									<li>
+										<a href="" data-largesrc="images/gallery/strawberries/strawberry3.jpg" data-title="Chocolate Berries" data-description="order your own delicious chocolate covered strawberries today!">
+											<img src="images/gallery/strawberries/thumbs/thumb_straw3.png" alt="img01"/>
+										</a>
+									</li>
+									<li>
+										<a href="" data-largesrc="images/gallery/pretzels/pretzel3.jpg" data-title="Stand Out" data-description="Chocolate dipped pretzels. Get them in an assortment of beautiful colours and styles!">
+											<img src="images/gallery/pretzels/thumbs/thumb_pret3.png" alt="img01"/>
+										</a>
+									</li>
+									<li>
+										<a href="" data-largesrc="images/gallery/pretzels/pretzel4.jpg" data-title="Sprinkles!" data-description="Sprinkled chocolate covered pretzel rods!">
+											<img src="images/gallery/pretzels/thumbs/thumb_pret4.png" alt="img01"/>
+										</a>
+									</li>
+								</ul>	
+							</div>
+					</div>
+				<p>Cakepops - The sugary treat that tastes so sweet!</p>					
+				</div>
+				</div><!-- /container -->
+
+  			<script src="gallery/js/grid.js"></script>
+   			<script src="gallery/js/grid2.js"></script>
+			<script src="gallery/js/grid3.js"></script>
+			<script src="gallery/js/grid4.js"></script>
+			<script>
+				$(function() {
+					Grid.init();
+					Grid2.init();
+					Grid3.init();
+					Grid4.init();
+				});
+			</script>
+		 <footer>
+			<p id="emailAddy">&copy; Copyright 2013 - Itty Bites. Maintained by: <a href="http://aislingdouglas.com">ADouglas - Web Developer</a></p><a href="http://www.facebook.com/ittybiteswindsor" target="_blank"><img id="facebook" src="images/facebook.png" alt="Facebook" /></a><a href="http://www.instagram.com/itty_bites" target="_blank"><img id="instagram" src="images/instagram.png" alt="instagram" /></a>
+		 </footer>
+		 
+	   </div>
+	</body>
+</html>
+
